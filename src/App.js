@@ -1,5 +1,6 @@
-function App() {
-  return <div>App</div>;
-}
+import DiaryEditor from "./DiaryEditor";
+import "./App.css";
 
-export default App;
+export default function App() {
+  return <DiaryEditor />;
+}
