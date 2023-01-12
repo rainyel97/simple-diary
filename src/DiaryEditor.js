@@ -1,8 +1,5 @@
 import { useState, useRef } from "react";
 
-//함수형 컴포넌트 사용
-//짧은 함수의 경우 에로우 펑션 적용
-
 export default function DiaryEditor() {
   const titleInput = useRef();
   const contentInput = useRef();
