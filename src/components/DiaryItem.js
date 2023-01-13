@@ -28,8 +28,8 @@ export default function DiaryItem({
   return (
     <div className="DiaryItem">
       <div className="info">
-        <h4 className="title_info">제목 : {title}</h4>
-        <p className="emotion_info">감정점수 : {emotion}</p>
+        <p className="title_info">제목 : {title}</p>
+        <p className="emotion_info">기분 : {emotion}</p>
         <p className="id_info">번호 : {id}</p>
         <p className="date_info">
           작성시간 : {new Date(createdTime).toLocaleString()}
@@ -63,13 +63,13 @@ export default function DiaryItem({
         </>
       ) : (
         <>
-          <button onClick={handleRemove}>삭제</button>
+          <button onClick={handleRemove}>삭제하기</button>
           <button
             onClick={() => {
               setIsUpdate((current) => !current);
             }}
           >
-            수정
+            수정하기
           </button>
         </>
       )}

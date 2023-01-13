@@ -1,5 +1,5 @@
-import DiaryEditor from "./DiaryEditor";
-import DiaryList from "./DiaryList";
+import DiaryEditor from "./components/DiaryEditor";
+import DiaryList from "./components/DiaryList";
 import "./App.css";
 import { useState, useRef } from "react";
 

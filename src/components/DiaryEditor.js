@@ -20,19 +20,21 @@ export default function DiaryEditor({ createDiary }) {
   //공백 입력 방지 replace(/ /gi, "") === "" g: 전체 모든 문자열을 변경 global, i: 영문 대소문자까지 구분. /<- ->/ 이 사이에 들어간 문자를 " "(공백)으로 변경
   function handleSubmit() {
     if (state.title.length === 0 || state.title.replace(/ /gi, "") === "") {
+      alert("제목을 적어주세요.");
       titleInput.current.focus();
       return;
     }
     if (state.content.length === 0 || state.content.replace(/ /gi, "") === "") {
+      alert("내용을 적어주세요.");
       contentInput.current.focus();
       return;
     }
     if (state.emotion === 0) {
+      alert("기분을 알려주세요.");
       emotionInput.current.focus();
       return;
     }
     createDiary(state.title, state.content, state.emotion);
-    alert("저장 성공!");
     setState({
       title: "",
       content: "",
@@ -64,7 +66,7 @@ export default function DiaryEditor({ createDiary }) {
         />
       </div>
       <div>
-        <span>오늘의 감정점수 : </span>
+        <span>오늘의 기분 :</span>
         <select
           ref={emotionInput}
           name="emotion"
@@ -72,15 +74,22 @@ export default function DiaryEditor({ createDiary }) {
           onChange={handleChangeState}
         >
           <option value={0}>오늘의 기분은 어땠나요?</option>
-          <option value={1}>1점</option>
-          <option value={2}>2점</option>
-          <option value={3}>3점</option>
-          <option value={4}>4점</option>
-          <option value={5}>5점</option>
+          <option value={"최악이에요"}>최악이에요</option>
+          <option value={"별로에요"}>별로에요</option>
+          <option value={"보통이에요"}>보통이에요</option>
+          <option value={"좋아요"}>좋아요</option>
+          <option value={"최고에요"}>최고에요</option>
         </select>
       </div>
       <div>
-        <button onClick={handleSubmit}>저장하기</button>
+        <button
+          onClick={() => {
+            if (window.confirm("일기를 정말 저장하시겠습니까?")) handleSubmit();
+          }}
+          className="submit_btn"
+        >
+          저장하기
+        </button>
       </div>
     </div>
   );
