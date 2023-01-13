@@ -27,7 +27,7 @@ export default function DiaryEditor({ createDiary }) {
       contentInput.current.focus();
       return;
     }
-    if (state.emotion === "0") {
+    if (state.emotion === 0) {
       emotionInput.current.focus();
       return;
     }
