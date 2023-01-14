@@ -3,4 +3,5 @@
 ##### 프로젝트 수행기간 : 2023/01
 ---
 스타일링 : bootwatch / 데이터저장X
+https://rainyel97.github.io/simple-diary/
 
