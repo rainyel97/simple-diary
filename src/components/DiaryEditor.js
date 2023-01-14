@@ -45,7 +45,7 @@ export default function DiaryEditor({ createDiary }) {
   return (
     <div className="DiaryEditor">
       <h2>오늘의 일기</h2>
-      <div>
+      <div class="form-group">
         <input
           ref={titleInput}
           value={state.title}
@@ -53,6 +53,7 @@ export default function DiaryEditor({ createDiary }) {
           name="title"
           placeholder="제목을 적어주세요."
           type="text"
+          id="inputDefault"
         />
       </div>
       <div>
@@ -86,7 +87,8 @@ export default function DiaryEditor({ createDiary }) {
           onClick={() => {
             if (window.confirm("일기를 정말 저장하시겠습니까?")) handleSubmit();
           }}
-          className="submit_btn"
+          type="button"
+          className="btn btn-primary btn-lg"
         >
           저장하기
         </button>

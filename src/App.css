@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Lora:wght@400;500&family=Noto+Serif+KR:wght@500&display=swap");
+
 #root {
   background-color: #f6f6f6;
   min-height: 100vh;
@@ -5,14 +7,19 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
+  font-size: 24px;
 }
+
 body {
   margin: 0;
 }
+
 .App {
   min-height: 100vh;
   background-color: white;
 }
+
 .DiaryEditor {
   min-width: fit-content;
   width: 700px;
@@ -25,6 +32,8 @@ body {
   margin: 20px;
   padding: 10px;
   outline: none;
+  border-radius: 8px;
+  border: rgb(231, 230, 229) solid 1px;
 }
 
 .DiaryEditor textarea {
@@ -34,27 +43,18 @@ body {
   height: 150px;
   resize: none;
   outline: none;
+  border-radius: 8px;
+  border: rgb(231, 230, 229) solid 1px;
 }
 
 .DiaryEditor select {
   width: 300px;
   margin: 20px;
   padding: 10px;
+  border-radius: 8px;
+  border: rgb(231, 230, 229) solid 1px;
 }
 
-.submit_btn {
-  width: 100px;
-  margin: 20px;
-  padding: 10px;
-  cursor: pointer;
-  background-color: rgb(231, 230, 229);
-  border: none;
-  border-radius: 8px;
-  transition: 0.5s;
-}
-.submit_btn:hover {
-  opacity: 0.5;
-}
 .DiaryList {
   max-width: 700px;
 }
@@ -70,7 +70,13 @@ h4 {
   border-radius: 8px;
   background-color: rgb(231, 230, 229);
 }
-
+.DiaryItem textarea {
+  resize: none;
+  outline: none;
+  height: fit-content;
+  border-radius: 8px;
+  border: none solid 1px;
+}
 .DiaryItem p {
   margin: 2px;
 }

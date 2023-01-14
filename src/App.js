@@ -1,6 +1,7 @@
 import DiaryEditor from "./components/DiaryEditor";
 import DiaryList from "./components/DiaryList";
 import "./App.css";
+import "./bootstrap.min.css";
 import { useState, useRef } from "react";
 
 export default function App() {

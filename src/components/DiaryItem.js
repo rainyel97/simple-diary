@@ -56,18 +56,26 @@ export default function DiaryItem({
               setNewContent(content);
               setIsUpdate((current) => !current);
             }}
+            type="button"
+            class="btn btn-danger"
           >
             취소
           </button>
-          <button onClick={handleUpdate}>완료</button>
+          <button onClick={handleUpdate} type="button" class="btn btn-info">
+            완료
+          </button>
         </>
       ) : (
         <>
-          <button onClick={handleRemove}>삭제하기</button>
+          <button onClick={handleRemove} type="button" class="btn btn-danger">
+            삭제하기
+          </button>
           <button
             onClick={() => {
               setIsUpdate((current) => !current);
             }}
+            type="button"
+            class="btn btn-info"
           >
             수정하기
           </button>
