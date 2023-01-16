@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/simple-diary/static/css/main.67f6e4fe.css",
-    "main.js": "/simple-diary/static/js/main.6dcd9bfc.js",
+    "main.css": "/simple-diary/static/css/main.02cafa54.css",
+    "main.js": "/simple-diary/static/js/main.19801a4a.js",
     "index.html": "/simple-diary/index.html",
-    "main.67f6e4fe.css.map": "/simple-diary/static/css/main.67f6e4fe.css.map",
-    "main.6dcd9bfc.js.map": "/simple-diary/static/js/main.6dcd9bfc.js.map"
+    "main.02cafa54.css.map": "/simple-diary/static/css/main.02cafa54.css.map",
+    "main.19801a4a.js.map": "/simple-diary/static/js/main.19801a4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.67f6e4fe.css",
-    "static/js/main.6dcd9bfc.js"
+    "static/css/main.02cafa54.css",
+    "static/js/main.19801a4a.js"
   ]
 }
